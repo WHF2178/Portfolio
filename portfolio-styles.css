@@ -288,6 +288,30 @@ body {
     }
 }
 
+/* Profile Photo */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 4px 24px rgba(0,255,65,0.15), 0 0 0 8px rgba(0,255,65,0.05);
+    background: var(--color-card);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(0,255,65,0.25), 0 0 0 12px rgba(0,255,65,0.10);
+}
+
 /* Terminal */
 .terminal {
     display: inline-block;
@@ -904,9 +928,6 @@ body {
         font-size: 3.5rem;
     }
 
-    .hero-actions {
-        flex-direction: row;
-    }
 
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
