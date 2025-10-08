@@ -176,5 +176,3 @@ function createMatrixRain() {
     });
 }
 
-// Uncomment to enable Matrix rain effect
-// createMatrixRain();
